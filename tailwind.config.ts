@@ -8,7 +8,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "custom-image": "url('/public/bg-img.jfif')",
+      },
+      container: {
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "1440px",
+        },
+      },
+    },
   },
   plugins: [],
 };
